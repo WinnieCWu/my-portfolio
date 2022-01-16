@@ -97,23 +97,54 @@ section {
     padding: 60px;
 }
 
-.txt {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
+.container-txt {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
 }
 
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 #about-me img{
     flex: 0 12%;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     text-align: center;
     object-fit: contain;
-}
-
-.subSection {
-    display: flex;
 }
 
 .section-title {
@@ -132,14 +163,6 @@ section {
 }
 
 .projects{
-    background: var(--tertiary-color);
-    display: flex;
-    justify-content: space-around;
-    position: static;
-    flex: 1 0 0;
-    padding: 20px;
-    text-align: center;
-    border-width: 20px;
     width: 50px;
     height: auto;
 }
