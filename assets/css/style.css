@@ -30,9 +30,8 @@ header {
     background-position: 100%;
     background-attachment: fixed;
     z-index:9999;
-
 }
-/*adding styles specific to header <h1> element */
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -55,17 +54,16 @@ header nav ul{
 }
 
 header nav ul li a{
-    /*margin: 0 30px;*/
-    padding: 10px 10px; /*for tighter nav menu*/
+    padding: 10px 10px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .hero {
     background-image: url("../images/BayBridge-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-position: center;*/
     background-position: 100%; 
     background-attachment: fixed;
     display: flex;
@@ -74,8 +72,6 @@ header nav ul li a{
     align-items: flex-start;
 }
 
-/* adding 'relative' keeps the form above the header sections*/
-/* Hero Style end*/
 .hero-cta{
     width: 100%;
     text-align: center;
@@ -83,7 +79,6 @@ header nav ul li a{
     font-size: 18px;
     line-height: 1;
     flex: 1 12%;
-
 }
 
 .hero-cta h2{
@@ -102,42 +97,6 @@ section {
     text-align: center;
     color: var(--secondary-color);
 }
-
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
 #about-me img{
     flex: 0 12%;
@@ -160,13 +119,22 @@ section {
 .projects-icon{
     width: 100px;
     height: auto;
+    position: relative;
 }
 
 .projects{
     width: 50px;
     height: auto;
+    position: relative;
 }
 
+.project-text{
+    position: absolute;
+    bottom:10px;
+    left: 5px;
+    font-weight: bold;
+    color: blue;
+}
 
 .flex-row{
     display: flex;
@@ -240,6 +208,5 @@ section {
     section, nav {
         flex-direction: column;
     }
-
  }
 
