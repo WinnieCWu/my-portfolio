@@ -1,6 +1,6 @@
 :root {
     --primary-color: #4dd2ff;
-    --secondary-color: #004de6;
+    --secondary-color: white;
     --tertiary-color: #ccccff;
 }
 
@@ -64,7 +64,7 @@ header nav ul li a{
     background-image: url("../images/BayBridge-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%; 
+    background-position: 80%; 
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -88,14 +88,25 @@ header nav ul li a{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+footer {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #0388fc;
+    position:absolute;
+    bottom:absolute;
+    width: 100%;
+}
+
+
 section {
     padding: 60px;
 }
 
-.container-txt {
+.gallery {
     position: relative;
     text-align: center;
     color: var(--secondary-color);
+    width: 200px;
 }
 
 #about-me img{
@@ -108,24 +119,25 @@ section {
 
 .section-title {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .projects-icon{
     width: 100px;
     height: auto;
     position: relative;
-}
-
-.projects{
-    width: 50px;
-    height: auto;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    margin-bottom: 10px;
 }
 
 .project-text{
@@ -133,7 +145,7 @@ section {
     bottom:10px;
     left: 5px;
     font-weight: bold;
-    color: blue;
+    color: var(--primary-color);
 }
 
 .flex-row{
