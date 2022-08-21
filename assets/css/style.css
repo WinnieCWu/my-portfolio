@@ -88,6 +88,8 @@ header nav ul li a{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+
+
 footer {
     text-align: center;
     margin: 0 auto;
@@ -100,13 +102,6 @@ footer {
 
 section {
     padding: 60px;
-}
-
-.gallery {
-    position: relative;
-    text-align: center;
-    color: var(--secondary-color);
-    width: 200px;
 }
 
 #about-me img{
@@ -130,13 +125,10 @@ section {
     flex-wrap: wrap;
 }
 
-.section-title a:hover {
-    background-color: var(--primary-color);
-}
 
 .inline {
     display: inline;
-    border:1px solid var(secondary-color);
+    border:1px solid var(--secondary-color);
     margin: 10px;
 
 }
@@ -148,7 +140,25 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.item {
+    width: 100%
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding-bottom: 1.5em;
+  }
+
+
+
+a:hover {
+    background-color: var(--primary-color);
 }
 
 .project-text{
@@ -163,7 +173,7 @@ section {
     display: flex;
 }
 
-*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
  @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -212,7 +222,7 @@ section {
     section, nav {
         flex-direction: column;
     }
-
+ }
 
  /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
  @media screen and (max-width: 575px) {
@@ -231,5 +241,4 @@ section {
     section, nav {
         flex-direction: column;
     }
- }
-
+ };
