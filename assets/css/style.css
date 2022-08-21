@@ -130,6 +130,17 @@ section {
     flex-wrap: wrap;
 }
 
+.section-title a:hover {
+    background-color: var(--primary-color);
+}
+
+.inline {
+    display: inline;
+    border:1px solid var(secondary-color);
+    margin: 10px;
+
+}
+
 .projects-icon{
     width: 100px;
     height: auto;
