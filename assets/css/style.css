@@ -123,9 +123,10 @@ section {
 }
 
 .inline {
-  display: inline;
-  border: 1px solid var(--secondary-color);
+  display: inline-block;
+  border: 1px;
   margin: 10px;
+  margin-left: 30px;
 }
 
 .projects-icon {
